@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+    <% include ../partials/nav.ejs %>
+        <div class="container">
+            <div class="card-deck my-4">
+                <div class="card shadow-md">
+                    <div class="card-header  container-fluid">
+                        <div class="bg-transparent border-0 float-right">
+                            <a href="https://github.com/MaykeFA/nodejs-template">
+                                <span class="btn btn-primary btnCardHeader">
+                                    Acessar no GitHub
+                                </span>
+                            </a>
+                        </div>
+                        <h1>NodeAPI Template</h1>
+
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="title">O que é?</h3>
+                            <p>
+                                Um template para o desenvolvimento de APIs em <a href="https://nodejs.org/en/">Node.js</a> utilizando <a href="https://www.mongodb.com/">MongoDB</a>
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="title">Características</h3>
+                            <ol>
+                                <li>Código orientado a objetos, utilizando o conceito de <em>Classes</em></li>
+                                <li>Funções que possuem comportamento assincrono retornam <em>Promisses</em>, as quais são tratadas utilizando o conceito de <em>Async/Await</em></li>
+                                <li>Utiliza o padrão de projetos <em>MVC</em></li>
+                                <li>A <em>API</em> é documentada seguindo a notação <i><a href="https://swagger.io/docs/">Swagger</a></i></li>
+                                <li>São realizados testes unitários na <em>API</em> com a ferramenta <i><a href="https://jasmine.github.io/">Jasmine</a></i></li>
+                                <li>Tanto a documentação quando os testes geram relatórios, os quais são acessíveis através dos respectivos endpoints: <a href="/api-docs">/api-docs</a> e <a href="/api-tests">/api-tests</a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3 class="title">Estrutura</h3>
+                            <p class="noSpace">├── Raiz</p>
+                            <p class="noSpace">│ ├── common -- classes que são utilizadas por diversos módulos, como gerenciar o log ou conectar ao banco</p>
+                            <p class="noSpace">│ ├── configs -- classes que armazenam as configurações específicas, p.ex.: onde o log será armazenado</p>
+                            <p class="noSpace">│ ├── models -- classes que especificam um modelo de negócio</p>
+                            <p class="noSpace">│ ├── controllers -- classes que gerenciam um model, p.ex.: realizando o CRUD</p>
+                            <p class="noSpace">│ ├── routes -- classes que definem as rotas que o servidor deve responder</p>
+                            <p class="noSpace">│ ├── docs -- classes que documentam a API, utilizando a notação Swagger</p>
+                            <p class="noSpace">│ ├── ouputs -- armazenam os arquivos gerados pelo servidor, como o Log e o relatório de teste</p>
+                            <p class="noSpace">│ ├── public -- pasta onde são armazenados arquivos públicos</p>
+                            <p class="noSpace">│ ├── server -- classe que determina toda a rotina de inicialização do servidor</p>
+                            <p class="noSpace">│ ├── specs -- classes que especificam os testes unitários para serem aplicados no Jasmine</p>
+                            <p class="noSpace">│ ├── views -- pasta que armazena os arquivos EJS da view</p>
+                            <p class="noSpace">│ │ ├── partials -- armazena trechos da view, p.ex.: uma navbar</p>
+                            <p class="noSpace">│ │ ├── pages -- armazena uma página completa da view, que pode reutilizar trechos armazenados em 'partials'</p>
+                            <p class="noSpace">│ └── app.js -- responsável por instanciar e inicializar o servidor de aplicação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

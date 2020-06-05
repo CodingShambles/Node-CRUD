@@ -1,0 +1,7 @@
+{
+    "name": "Node API Template",
+    "description": "Template de API em NodeJS",
+    "repository": "https://github.com/MaykeFA/nodejs-template",
+    "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started/public/node.svg",
+    "keywords": ["node", "express", "api", "mvc", "jasmine", "swagger"]
+}
